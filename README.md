@@ -1,4 +1,4 @@
-ADAGIO & ALLEGRO WEBSHOP
+ADAGIO & ALLEGRO: MUSICAL INSTRUMENT WEBSHOP
 
 Overview:
 - Adagio & Allegro is a dynamic, front-end e-commerce web application for a musical instrument store. It provides users with a seamless shopping experience where they can browse instruments, configure their order (type, color, quantity), and proceed through a validated checkout flow. The application is built with a strong focus on scalable software architecture and modern web standards.
