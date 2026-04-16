@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Checkout</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Vendor-Specific Styles & Scripts -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">         
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <!-- Application-Specific Styles & Scripts -->
+        <link href="asssets/css/style.css" rel="stylesheet" type="text/css"/>
+        <script src="asssets/js/App.js" type="module"></script>
+    </head>
+
+
+    <body>
+        <!-- NAVIGATION BAR -->
+        <div class="navbar-fixed">
+            <nav class="indigo">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo center">A&A</a>
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#order" id="nav4"></a></li>
+                        <li><a href="#contact" id="nav5"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <ul class="sidenav" id="nav-mobile">
+            <li><a href="#order" id="sidenav4"></a></li>
+            <li><a href="#contact" id="sidenav5" class="black-text"></a></li>
+        </ul>
+
+        <!-- HERO SECTION -->
+        <div id="start" class="parallax-hero">
+            <div class="hero-content">
+                <h1 id="hero-title2"></h1>
+                <p id="hero-parag2"></p>
+            </div>
+        </div>
+
+        <!-- CHECKOUT FORM -->
+        <form id="order" class="shopping-cart-section white-text">
+            <div class="container">
+                <h2 class="center" id="checkout-title"></h2>
+                    <div class="card white">
+                            <div id="div-inputs" class="container-item"></div>
+                        </div>
+                    </div>
+            </div>
+
+                <!-- Button -->
+                <div class="center" style="margin-top: 2rem;">
+                    <button type="submit" class="waves-effect waves-light btn-large indigo" id="order-btn"></button>
+                </div>
+            </div>
+        </form>
+
+
+        <!-- FOOTER CONTACT -->
+            <footer id="contact" class="page-footer indigo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <h5 class="white-text" id="contact-title"></h5>
+                            <p class="grey-text text-lighten-1" id="contact-phone"></p>
+                            <p class="grey-text text-lighten-1" id="contact-email"></p>
+                            <p class="grey-text text-lighten-1" id="contact-address"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-copyright center">
+                    <div class="container" id="footer-text"></div>
+                </div>
+            </footer>
+    </body>
+</html>

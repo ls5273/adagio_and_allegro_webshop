@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f51b5; 
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/* Message text */
+.unsupported-message {
+    width: 60%;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 3rem;
+    line-height: 1.5;
+}

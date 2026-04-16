@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Adagio & Allegro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Vendor-Specific Styles & Scripts -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">         
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <!-- Application-Specific Styles & Scripts -->
+        <link href="asssets/css/style.css" rel="stylesheet" type="text/css"/>
+        <script src="asssets/vendor/modernizr/modernizr-custom-es6.js"></script>
+        <script>
+            // Perform Modernizr checks before loading the App module
+            if (!Modernizr.es6array || !Modernizr.generators || !Modernizr.es6math
+                    || !Modernizr.arrow || !Modernizr.es6number || !Modernizr.es6object
+                    || !Modernizr.es6collections || !Modernizr.promises
+                    || !Modernizr.es6string)
+            {
+                /*
+                 * window.location.replace(...) is better than using
+                 * window.location.href, because replace() does not keep the
+                 * originating page in the session history.
+                 */
+                window.location.replace("unsupported.html");
+            } else {
+                /*
+                 * If the checks pass, dynamically load the App module using
+                 * traditional coding. Do not use string interpolation as it is
+                 * also part of ES6.
+                 */
+                var script = document.createElement('script');
+                script.type = 'module';
+                script.src = 'asssets/js/App.js';
+                document.head.appendChild(script);
+            }
+        </script>
+
+    </head>
+
+
+    <body>
+        <!-- NAVIGATION BAR -->
+        <div class="navbar-fixed">
+            <nav class="indigo">
+                <div class="nav-wrapper">
+                    <a href="#start" class="brand-logo center">A&A</a>
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#about-us" id="nav1"></a></li>
+                        <li><a href="#shopping-cart" id="nav2"></a></li>
+                        <li><a href="#contact" id="nav3"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <ul class="sidenav" id="nav-mobile">
+            <li><a href="#about-us" id="sidenav1" class="black-text"></a></li>
+            <li><a href="#shopping-cart" id="sidenav2" class="black-text"></a></li>
+            <li><a href="#contact" id="sidenav3" class="black-text"></a></li>
+        </ul>
+
+    
+        <!-- HERO SECTION -->
+        <div id="start" class="parallax-hero">
+            <div class="hero-content">
+                <h1 id="hero-title1"></h1>
+                <p id="hero-parag1"></p>
+            </div>
+        </div>
+
+
+        <!-- ABOUT US -->
+        <section id="about-us" class="about-us-section white">
+            <div class="container">
+                <h2 id="about-title"></h2>
+                <p id="about-text-1"></p>
+                <p id="about-text-2"></p>
+            </div>
+        </section>
+
+
+        <!-- SHOPPING CART -->
+        <form id="shopping-cart" class="shopping-cart-section white-text" action="checkout.html">
+            <div class="container">
+                <h2 class="center" id="cart-title"></h2>
+
+                <div class="row">
+                    <!-- Column 1: Text -->
+                    <div class="col s12 m4">
+                        <h5 id="product-types"></h5>
+                        <p id="product-description"></p>
+                    </div>
+
+                    <!-- Column 2: Select -->
+                    <div class="col s12 m4">
+                        <h5 id="select-label"></h5>
+                        <h5 id="select-description" class="black-text"></h5>
+                        <div id="div-selects"></div>
+                    </div>
+
+                    <!-- Column 3: Image -->
+                    <div class="col s12 m4 center" id="product-img">
+                        <img src="asssets/images/undefined-undefined-1.png" alt="Product Place" class="responsive-img" style="max-height: 1000px;">
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="center" style="margin-top: 2rem;">
+                    <button type="submit" class="waves-effect waves-light btn-large indigo" id="checkout-btn" disabled></button>
+                </div>
+            </div>
+        </form>
+
+        
+        <!-- FOOTER CONTACT -->
+        <footer id="contact" class="page-footer indigo">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                    <h5 class="white-text" id="contact-title"></h5>
+                    <p class="grey-text text-lighten-1" id="contact-phone"></p>
+                    <p class="grey-text text-lighten-1" id="contact-email"></p>
+                    <p class="grey-text text-lighten-1" id="contact-address"></p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer-copyright center">
+            <div class="container" id="footer-text"></div>
+          </div>
+        </footer>
+
+    </body>
+</html>

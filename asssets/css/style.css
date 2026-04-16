@@ -1,0 +1,209 @@
+/* HERO */
+.parallax-hero {
+  position: relative;
+  height: 100vh; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.parallax-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('../images/background.webp');
+  background-size: cover;
+  background-position: center;
+  transform: translateZ(0);
+  will-change: transform;
+  z-index: -2;
+  position: fixed;
+}
+
+.parallax-hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  margin-top: -3em;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 3rem; }
+  .hero-content p { font-size: 1.4rem; }
+}
+@media (max-width: 480px) {
+  .hero-content h1 { font-size: 2.5rem; }
+  .hero-content p { font-size: 1.2rem; }
+  .hero-content button { padding: 12px 24px; font-size: 0.9rem; }
+}
+
+
+
+
+/* ABOUT US */
+.about-us-section {
+    padding: 6rem 2rem; 
+}
+
+.about-us-section .container {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-us-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: -0.8rem;
+}
+
+.about-us-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+    .about-us-section h2 {
+        font-size: 2rem;
+    }
+    .about-us-section p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us-section h2 {
+        font-size: 1.8rem;
+    }
+    .about-us-section p {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+
+/* SHOPPING CART */
+.shopping-cart-section {
+    background-color: rgba(255,255,255,0.0); 
+    padding: 6rem 2rem;
+    backdrop-filter: blur(4px);
+    margin: 2rem auto;
+}
+
+.shopping-cart-section::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+.shopping-cart-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    margin-top: -1rem;
+}
+
+.shopping-cart-section h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.shopping-cart-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .shopping-cart-section h2 { font-size: 2rem; }
+    .shopping-cart-section h5 { font-size: 1.3rem; }
+    .shopping-cart-section p { font-size: 1rem; }
+}
+
+.shopping-cart-section .input-field select:focus {
+  border: 1px solid #3f51b5; 
+  box-shadow: 0 0 8px rgba(63, 81, 181, 0.6);
+}
+
+.shopping-cart-section .dropdown-content li > span {
+  color: #3f51b5 !important;
+  font-size: 1.1rem;
+}
+
+.shopping-cart-section .caret {
+  fill: white; 
+}
+
+.shopping-cart-section .row {
+  gap: 2rem; 
+}
+
+.shopping-cart-section img {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 3px; 
+}
+
+
+
+
+
+/* FOOTER CONTACT */
+.page-footer p {
+    margin-top: -0.5rem;
+}
+
+.page-footer h5 {
+    margin-bottom: 2rem;
+}
+
+
+
+
+/* CHECKOUT */
+#div-inputs label {
+    color: #3f51b5;           
+    font-size: 1.2rem;      
+}
+
+#div-inputs input {
+    color: rgb(104, 104, 104);           
+    font-size: 1.2rem;      
+}
+
+
+#order .card {
+    background-color: rgba(63, 81, 181, 0.1); 
+    padding: 1rem;
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 2em;
+}
+
+
+
+
